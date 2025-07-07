@@ -7,6 +7,6 @@ namespace ProductManagement.API.Models
         public ICollection<ProductPrice> ProductPrices { get; set; }
         public decimal Tax { get; set; }
         public int CategoryId { get; set; }
-        public Category Category { get; set; }
+        public Category Category { get; set; } = null;
     }
 }

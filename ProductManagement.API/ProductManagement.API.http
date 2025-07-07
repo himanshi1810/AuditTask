@@ -1,9 +1,16 @@
 @ProductManagement.API_HostAddress = http://localhost:5068
 
-Post {{ProductManagement.API_HostAddress}}/api/Product
+Post {{ProductManagement.API_HostAddress}}/api/Invoice
 Content-Type: application/json
 Accept: application/json
 {
- 
+  "customerId": 1,
+  "items": [
+    { "productId": 1, "quantity": 3 }
+
+  ]
 }
+
+
+
 

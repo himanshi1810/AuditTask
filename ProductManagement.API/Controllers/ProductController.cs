@@ -32,8 +32,16 @@ namespace ProductManagement.API.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post([FromBody] Product product)
+        [HttpPost]
+        public async Task<IActionResult> Post([FromBody] ProductCreateDto dto)
         {
+            var product = new Product
+            {
+                Name = dto.Name,
+                Tax = dto.Tax,
+                CategoryId = dto.CategoryId
+            };
+
             await _productService.AddAsync(product);
             return Ok();
         }
