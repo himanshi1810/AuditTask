@@ -1,4 +1,5 @@
 using ProductManagement.API.Models;
+using ProductManagement.API.Repositories.Implementations;
 using ProductManagement.API.Repositories.Interfaces;
 
 namespace ProductManagement.API.Repositories.UnitOfWork

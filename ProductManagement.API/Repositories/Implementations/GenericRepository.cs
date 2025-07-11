@@ -1,7 +1,8 @@
 using Microsoft.EntityFrameworkCore;
+using ProductManagement.API.Repositories.Interfaces;
 using System.Linq.Expressions;
 
-namespace ProductManagement.API.Repositories.Interfaces
+namespace ProductManagement.API.Repositories.Implementations
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
